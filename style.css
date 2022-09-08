@@ -1,0 +1,256 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+    background-image: url('Galaxy-Background-1536x864.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    padding: 2px 102px;
+  }
+  .navbar { 
+
+  }
+  .logoimg { 
+    width: 58px;
+    height: 62px;
+  }
+  .metaman { 
+    width: 201px;
+    height: 50px;
+    background-color: #b75f9e;
+  }
+  .navbar { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  ul li  { 
+    display: inline-block;
+    margin: 88px;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    box-shadow: 0px 0px 34px #ffff;
+    border-radius: 6px;
+    
+  }
+  ul li:hover { 
+    color: #b75f9e;
+    transition: 3s;
+    
+
+   
+  }
+  .metaman { 
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    border-radius: 27px;
+    cursor: pointer;
+  }
+  .metaman > h1 { 
+    font-size: 25px;
+    padding: 13px 20px;
+  }
+  .metaman:hover { 
+    
+    background-color: rgb(47, 98, 226);
+    transition: 1.5s;
+  }
+  .sectionbody > h1 { 
+    font-size: 101px;
+    margin: 47px 0;
+    color: white;
+
+  }
+  .sectionbody > h1 span { 
+    color:black;
+   
+    position: relative;
+  }
+  .sectionbody > h3 { 
+    font-size: 21px;
+    margin-top: 20px;
+    color: white ;
+  }
+  .button { 
+    margin-top: 30px;
+    width: 201px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 35px;
+    background-color: #b75f9e ;
+    cursor: pointer;
+    
+  }
+  .pht { 
+   
+    width: 550px;
+
+    margin-left: 779px;
+    
+    margin-top: -370px;
+    cursor: pointer;
+    transition:1s;
+  }
+  .pht:hover { 
+    transform: scale(1.2);
+    transition: 2s;
+   
+    
+  }
+.button:hover { 
+    background-color: blue;
+    transition: 2s;
+}
+
+.cols { 
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 550px;
+ 
+  border-radius: 20px;
+}
+.planet1 { 
+  width: 530px;
+  height: 236px;
+  margin-top: 220px;
+  margin-left: -122px;
+  transition: 0.5s;
+
+}
+.planet2 { 
+  width: 377px;
+  height: 335px;
+  margin-top: 171px;
+  margin-right: 82px;
+  transition: 1.2s;
+}
+.planet3 { 
+  width: 347px;
+  margin-top: 152px;
+  height: 375px;
+  transition: 1.2s;
+}
+.inf > h1 { 
+  font-size: 70px;
+  color: #120000;
+}
+.inf > p { 
+  color: white;
+}
+.section2 > img{
+  transform: rotate(80deg);
+  width: 200px;
+  animation-name: test-anim;
+  animation-duration: 50s;
+  animation-iteration-count: infinite;
+  margin-top: 20px;
+  box-shadow: 0px 0px 150px #ffff;
+  border-radius: 184px;
+
+}
+@keyframes test-anim  {
+  0% { 
+    transform: translateX(0px);
+
+  }
+  50% { 
+    transform: translateX(1200px);
+
+  }
+  100% { 
+    transform: translateX(0px);
+  }
+  
+}
+.planet1:hover{ 
+  
+   transition: 1.2s;
+   transform: scale(1.2);
+  
+  
+}
+.planet2:hover { 
+  
+   transition: 1.2s;
+   transform: scale(1.2);
+   
+}
+.planet3:hover { 
+  
+   transition: 1.2s;
+   transform: scale(1.2);
+}
+@media screen and (max-width: 1462px)
+{
+  ul li { 
+  margin: 20px;
+  }
+}
+@media screen and (max-width: 918px){ 
+  ul li { 
+    display: none;
+  }
+  .pht { 
+    width: 252px;
+    margin-left: 375px;
+    margin-bottom: 228px;
+  }
+  .cols > a > img { 
+   flex-wrap: wrap;
+
+  }
+  .section2 > img { 
+    display: none;
+  }
+  .inf { 
+    margin-top: 950px;
+  }
+  .cols { 
+    display: flex;
+    flex-direction: column;
+  }
+}
